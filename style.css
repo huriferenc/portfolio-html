@@ -273,3 +273,17 @@ footer > aside.links > a {
     gap: 1rem;
   }
 }
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) and (orientation: landscape) {
+  section.intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5vw;
+  }
+
+  section.intro > aside.image > img {
+    width: 40vw;
+  }
+}
