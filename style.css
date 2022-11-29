@@ -202,6 +202,10 @@ footer > aside.signature {
   gap: 2rem;
 }
 
+footer > aside.links {
+  text-align: right;
+}
+
 footer > aside.links > a {
   margin: 0.2rem;
   font-size: 1.5rem;
