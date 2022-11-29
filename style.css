@@ -225,10 +225,6 @@ footer > aside.links > a {
     appearance: none;
   }
 
-  .mobile-toggle-btn-input:checked {
-    background: red;
-  }
-
   nav > ul.menu:has(+ .mobile-toggle-btn .mobile-toggle-btn-input:not(:checked)) {
     display: none;
   }
