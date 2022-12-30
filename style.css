@@ -260,7 +260,7 @@ footer > aside.links > a {
   }
 
   section.intro > aside.image > img {
-    width: 100%;
+    display: none;
   }
 
   footer {
@@ -275,11 +275,5 @@ footer > aside.links > a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    gap: 5vw;
-  }
-
-  section.intro > aside.image > img {
-    width: 40vw;
   }
 }
