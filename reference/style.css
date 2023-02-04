@@ -1,3 +1,8 @@
+:root {
+  --card-primary-color: #00c5f7;
+  --card-secondary-color: #64ffda;
+}
+
 main > section {
   align-items: flex-start;
 }
@@ -14,8 +19,12 @@ section > article > .app-list {
 
 section > article > .app-list > .app-item {
   padding: 20px;
-  box-shadow: 0 0 25px #00c5f7;
+  box-shadow: 0 0 25px var(--card-primary-color);
   border-radius: 5px;
+}
+
+section > article > .app-list > .app-item > .title {
+  height: 3rem;
 }
 
 section > article > .app-list > .app-item > .preview {
@@ -49,6 +58,7 @@ section > article > .app-list > .app-item > .preview > .hover-item > button > i 
 }
 
 section > article > .app-list > .app-item > p.description {
+  height: 7rem;
   text-align: right;
 }
 
@@ -71,4 +81,31 @@ section > article > .app-list > .app-item > .skill-list > span > i {
 
 section > article > .app-list > .app-item > .skill-list > span > img {
   width: var(--icon-size);
+}
+
+section > article > .app-list > .app-item > .links {
+  display: flex;
+  padding-top: 20px;
+  gap: 1rem;
+}
+
+section > article > .app-list > .app-item > .links > .btn {
+  flex: 1;
+  width: 40%;
+  padding: 0.3rem 0;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+}
+
+section > article > .app-list > .app-item > .links > .btn--disabled {
+  opacity: 0.4;
+}
+
+section > article > .app-list > .app-item > .links > .btn--primary {
+  background-color: var(--card-primary-color);
+}
+
+section > article > .app-list > .app-item > .links > .btn--secondary {
+  background-color: var(--card-secondary-color);
 }

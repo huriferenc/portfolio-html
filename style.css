@@ -47,6 +47,12 @@ a {
   color: var(--font-color);
 }
 
+a:disabled {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+}
+
 button {
   all: unset;
   cursor: pointer;
@@ -171,7 +177,11 @@ section.skills > aside.details > .skill-list > span > i {
 }
 
 section.skills > aside.details > .skill-list > span > img {
-  width: var(--icon-size);
+  height: calc(var(--icon-size) - 4.5px);
+}
+
+section.skills > aside.details > .skill-list > span > p {
+  font-size: 0.85rem;
 }
 
 section.skills > aside.image > img {
