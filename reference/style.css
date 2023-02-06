@@ -3,39 +3,44 @@
   --card-secondary-color: #64ffda;
 }
 
+main {
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  gap: 5vw;
+}
+
 main > section {
-  align-items: flex-start;
+  display: block;
+  min-height: auto;
 }
 
-main > section > article {
-  width: 100%;
-}
-
-section > article > .app-list {
+section > .app-list {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 }
 
-section > article > .app-list > .app-item {
+section > .app-list > .app-item {
   padding: 20px;
   box-shadow: 0 0 25px var(--card-primary-color);
   border-radius: 5px;
 }
 
-section > article > .app-list > .app-item > .title {
+section > .app-list > .app-item > .title {
   height: 3rem;
 }
 
-section > article > .app-list > .app-item > .preview {
+section > .app-list > .app-item > .preview {
   position: relative;
 }
 
-section > article > .app-list > .app-item > .preview > img {
+section > .app-list > .app-item > .preview > img {
   width: 100%;
+  max-height: 145px;
+  object-fit: contain;
 }
 
-section > article > .app-list > .app-item > .preview > .hover-item {
+section > .app-list > .app-item > .preview > .hover-item {
   position: absolute;
   top: 0;
   left: 0;
@@ -48,21 +53,21 @@ section > article > .app-list > .app-item > .preview > .hover-item {
   opacity: 0;
 }
 
-section > article > .app-list > .app-item > .preview > .hover-item:hover {
+section > .app-list > .app-item > .preview > .hover-item:hover {
   opacity: 1;
   background-color: hsla(0, 0%, 0%, 0.75);
 }
 
-section > article > .app-list > .app-item > .preview > .hover-item > button > i {
+section > .app-list > .app-item > .preview > .hover-item > button > i {
   font-size: 3rem;
 }
 
-section > article > .app-list > .app-item > p.description {
+section > .app-list > .app-item > p.description {
   height: 7rem;
   text-align: right;
 }
 
-section > article > .app-list > .app-item > .skill-list {
+section > .app-list > .app-item > .skill-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, 2rem);
   gap: 0.5rem;
@@ -70,26 +75,26 @@ section > article > .app-list > .app-item > .skill-list {
   padding-top: 15px;
 }
 
-section > article > .app-list > .app-item > .skill-list > span {
+section > .app-list > .app-item > .skill-list > span {
   --icon-size: 2rem;
 }
 
-section > article > .app-list > .app-item > .skill-list > span > i {
+section > .app-list > .app-item > .skill-list > span > i {
   font-size: var(--icon-size);
   color: hsl(255, 98%, 80%);
 }
 
-section > article > .app-list > .app-item > .skill-list > span > img {
+section > .app-list > .app-item > .skill-list > span > img {
   width: var(--icon-size);
 }
 
-section > article > .app-list > .app-item > .links {
+section > .app-list > .app-item > .links {
   display: flex;
   padding-top: 20px;
   gap: 1rem;
 }
 
-section > article > .app-list > .app-item > .links > .btn {
+section > .app-list > .app-item > .links > .btn {
   flex: 1;
   width: 40%;
   padding: 0.3rem 0;
@@ -98,14 +103,14 @@ section > article > .app-list > .app-item > .links > .btn {
   text-align: center;
 }
 
-section > article > .app-list > .app-item > .links > .btn--disabled {
+section > .app-list > .app-item > .links > .btn--disabled {
   opacity: 0.4;
 }
 
-section > article > .app-list > .app-item > .links > .btn--primary {
+section > .app-list > .app-item > .links > .btn--primary {
   background-color: var(--card-primary-color);
 }
 
-section > article > .app-list > .app-item > .links > .btn--secondary {
+section > .app-list > .app-item > .links > .btn--secondary {
   background-color: var(--card-secondary-color);
 }
