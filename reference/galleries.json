@@ -1,0 +1,61 @@
+[
+  {
+    "name": "ems",
+    "images": [
+      {
+        "src": "./assets/ems-01.png",
+        "alt": "EMS image number 1"
+      },
+      {
+        "src": "./assets/ems-02.png",
+        "alt": "EMS image number 2"
+      },
+      {
+        "src": "./assets/ems-03.png",
+        "alt": "EMS image number 3"
+      }
+    ]
+  },
+  {
+    "name": "ex",
+    "images": [
+      {
+        "src": "./assets/ex-01.png",
+        "alt": "Exalon image number 1"
+      },
+      {
+        "src": "./assets/ex-02.png",
+        "alt": "Exalon image number 2"
+      }
+    ]
+  },
+  {
+    "name": "tenant",
+    "images": [
+      {
+        "src": "./assets/tenant-01.png",
+        "alt": "Tenancy Tracker image number 1"
+      },
+      {
+        "src": "./assets/tenant-02.png",
+        "alt": "Tenancy Tracker image number 2"
+      },
+      {
+        "src": "./assets/tenant-03.png",
+        "alt": "Tenancy Tracker image number 3"
+      },
+      {
+        "src": "./assets/tenant-04.png",
+        "alt": "Tenancy Tracker image number 4"
+      },
+      {
+        "src": "./assets/tenant-05.png",
+        "alt": "Tenancy Tracker image number 5"
+      },
+      {
+        "src": "./assets/tenant-06.png",
+        "alt": "Tenancy Tracker image number 6"
+      }
+    ]
+  }
+]
